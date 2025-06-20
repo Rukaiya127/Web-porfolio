@@ -1,4 +1,4 @@
-/* common shared styles */
+/* common shared styles
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -8,7 +8,7 @@ body {
 }
 
 /* nav related styles */
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -397,6 +397,262 @@ textarea {
     }
 }
 
+
+@keyframes highlight {
+    0% { background-color: #FD6E0A; color: white; }
+    100% { background-color: transparent; color: #181818; }
+}
+
+.highlight-title {
+    animation: highlight 2s ease;
+} */ */
+/* common shared styles */
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+/* nav related styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px;
+}
+
+.nav-title {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.button-primary {
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+    background-color: #e65c00;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #474747;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FD6E0A;
+}
+
+/* head related style */
+.header {
+    background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+
+.banner {
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner .profile-pic {
+    width: 500px;
+}
+
+.banner-greet {
+    font-size: 45px;
+    color: #474747;
+    margin-bottom: 0;
+}
+
+.banner-title {
+    font-size: 85px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    margin-bottom: 20px;
+}
+
+/* main section styles */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-top: 130px;
+}
+
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* about section styles */
+.about {
+    padding: 130px;
+    border-radius: 10px;
+    background-color: #FFF8F3;
+    margin: 130px 0;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info {
+    text-align: center;
+}
+
+/* skills related styles */
+#what-i-do-description {
+    padding: 30px 150px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    max-width: 250px;
+    text-align: center;
+}
+
+.skill-description {
+    color: #757575;
+}
+
+/* resume section styles */
+.resume-column-title {
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.resume-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.resume-item-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.resume-item-institute {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.resume-item-description,
+.resume-item-institute {
+    color: #757575;
+}
+
+.resume-container hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* footer style */
+footer {
+    display: flex;
+    gap: 100px;
+    background-color: #FFF8F3;
+    margin-top: 100px;
+    padding: 100px 200px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.social-links a {
+    margin-right: 25px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: 2px solid #FD6E0A;
+    box-shadow: 0 0 5px rgba(253, 110, 10, 0.4);
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 @keyframes highlight {
     0% { background-color: #FD6E0A; color: white; }
